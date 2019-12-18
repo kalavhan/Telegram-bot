@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative 'bot_class'
 class Pizza
   def initialize
