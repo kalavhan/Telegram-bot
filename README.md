@@ -41,7 +41,7 @@ In this project, i built a Telegram bot that gives you instructions to prepare p
  
 ### Assignment
 
-Full requeriments for the practice are in [here](![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png))
+Full requeriments for the practice are in [here](https://www.notion.so/microverse/Build-your-own-bot-ebd0d7ac5da240e5987720bdc83f38fa)
 
 ### Built With
 
