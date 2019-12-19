@@ -101,30 +101,29 @@ class Pizza
     ]
   end
 
-  def how_to_pizza(bot, message, type)
+  def how_to_pizza(type)
     text_to = "Ingredients\n"
     line = 1
     @pizza_instructions[type.to_sym][0].each do |x|
       text_to += "#{line}.-#{x}\n"
       line += 1
     end
-    Botcore.answer(bot, message, text_to)
-    text_to_in = "Instructions\n"
+    text_to += "\nInstructions\n"
     line = 1
     @pizza_instructions[type.to_sym][1].each do |x|
-      text_to_in += "#{line}.-#{x}\n"
+      text_to += "#{line}.-#{x}\n"
       line += 1
     end
-    Botcore.answer(bot, message, text_to_in)
+    text_to
   end
 
-  def fun_fact(bot, message)
-    Botcore.answer(bot, message, @fun_facts.sample)
+  def fun_fact()
+    @fun_facts.sample
   end
 
-  def random_joke(bot, message)
+  def random_joke()
     rjoke = @jokes.sample
     text_to = "#{rjoke[:question]}\n#{rjoke[:answer]}"
-    Botcore.answer(bot, message, text_to)
+    text_to
   end
 end
