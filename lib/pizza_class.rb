@@ -3,47 +3,50 @@
 require_relative 'bot_class'
 class Pizza
   def initialize
-    @pepperoni_ingredients = [
-      '1 can (8 oz each) Tomato Sauce-No Salt Added',
-      '1/4 cup grated Parmesan cheese',
-      '1/4 teaspoon dried oregano',
-      '1 prebaked thin pizza crust (12-inch)',
-      '1 cup shredded part-skim mozzarella cheese',
-      '1/3 cup sliced pepperoni'
-    ]
-
-    @pepperoni_steps = [
-      'Preheat oven to 450°F.',
-      'Combine tomato sauce, Parmesan cheese and oregano in small bowl.',
-      'spread tomato sauce evenly over crust.',
-      'Sprinkle pizza with mozzarella cheese.',
-      'top with pepperoni.',
-      'Place on ungreased pizza pan.',
-      'Bake 12 to 15 minutes or until edges of crust are browned lightly and cheese melts.',
-      'Cut pizza into 6 slices.'
-    ]
-
-    @hawaiian_ingredients = [
-      '1/2 pizza crust',
-      '1/2 cup (127g) pizza sauce (homemade or store-bought)',
-      '1 and 1/2 cups (6oz or 168g) shredded mozzarella cheese',
-      '1/2 cup (75g) cooked ham or Canadian bacon, sliced or chopped',
-      '1/2 cup (82g) pineapple chunks (canned or fresh)',
-      '3 slices bacon, cooked and crumbled',
-    ]
-
-    @hawaiian_stemps = [
-      'shape the dough',
-      'preheatthe oven to 475°F',
-      'Cover the shaped dough lightly with plastic wrap and allow it to rest as the oven preheats.',
-      'brush the shaped dough lightly with olive oil',
-      'Using your fingers, push dents into the surface of the dough to prevent bubbling.',
-      'Top the dough evenly with pizza sauce',
-      'add the cheese, ham, pineapple, and bacon',
-      'Bake pizza for 12-15 minutes.',
-      'Remove from the oven and top with fresh basil, if desired.',
-      'Slice hot pizza and serve immediately.',
-    ]
+    @pizza_instructions = {
+      pepperoni: [
+        [
+          '1 can (8 oz each) Tomato Sauce-No Salt Added',
+          '1/4 cup grated Parmesan cheese',
+          '1/4 teaspoon dried oregano',
+          '1 prebaked thin pizza crust (12-inch)',
+          '1 cup shredded part-skim mozzarella cheese',
+          '1/3 cup sliced pepperoni'
+        ],
+        [
+          'Preheat oven to 450°F.',
+          'Combine tomato sauce, Parmesan cheese and oregano in small bowl.',
+          'spread tomato sauce evenly over crust.',
+          'Sprinkle pizza with mozzarella cheese.',
+          'top with pepperoni.',
+          'Place on ungreased pizza pan.',
+          'Bake 12 to 15 minutes or until edges of crust are browned lightly and cheese melts.',
+          'Cut pizza into 6 slices.'
+        ]
+      ],
+      hawaiian: [
+        [
+          '1/2 pizza crust',
+          '1/2 cup (127g) pizza sauce (homemade or store-bought)',
+          '1 and 1/2 cups (6oz or 168g) shredded mozzarella cheese',
+          '1/2 cup (75g) cooked ham or Canadian bacon, sliced or chopped',
+          '1/2 cup (82g) pineapple chunks (canned or fresh)',
+          '3 slices bacon, cooked and crumbled',
+        ],
+        [
+          'shape the dough',
+          'preheatthe oven to 475°F',
+          'Cover the shaped dough lightly with plastic wrap and allow it to rest as the oven preheats.',
+          'brush the shaped dough lightly with olive oil',
+          'Using your fingers, push dents into the surface of the dough to prevent bubbling.',
+          'Top the dough evenly with pizza sauce',
+          'add the cheese, ham, pineapple, and bacon',
+          'Bake pizza for 12-15 minutes.',
+          'Remove from the oven and top with fresh basil, if desired.',
+          'Slice hot pizza and serve immediately.',
+        ]
+      ]
+    }
 
     @fun_facts = [
       'The average pizzeria uses roughly 55 pizza boxes per day.',
@@ -98,34 +101,17 @@ class Pizza
     ]
   end
 
-  def pepperoni(bot, message)
+  def how_to_pizza(bot, message, type)
     text_to = "Ingredients\n"
     line = 1
-    @pepperoni_ingredients.each do |x| 
+    @pizza_instructions[type.to_sym][0].each do |x| 
       text_to += "#{line}.-#{x}\n"
       line += 1
     end
     Botcore.answer(bot, message, text_to)
     text_to_in = "Instructions\n"
     line = 1
-    @pepperoni_steps.each do |x| 
-      text_to_in += "#{line}.-#{x}\n"
-      line += 1
-    end
-    Botcore.answer(bot, message, text_to_in)
-  end
-
-  def hawaiian(bot, message)
-    text_to = "Ingredients\n"
-    line = 1
-    @pepperoni_ingredients.each do |x| 
-      text_to += "#{line}.-#{x}\n"
-      line += 1
-    end
-    Botcore.answer(bot, message, text_to)
-    text_to_in = "Instructions\n"
-    line = 1
-    @pepperoni_ingredients.each do |x| 
+    @pizza_instructions[type.to_sym][1].each do |x| 
       text_to_in += "#{line}.-#{x}\n"
       line += 1
     end

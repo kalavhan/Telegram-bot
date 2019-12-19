@@ -26,9 +26,9 @@ class Botcore
       text_to = "/help -- see the command list\n'/pepperoni -- see how to make pepperoni pizza\n/hawaiian -- see how to make hawaiian pizza\n/funfact -- fun facts about pizza\n/joke -- some nice jokes about pizza"
       self.class.answer(bot, message, text_to)
     when '/pepperoni'
-      @pizza.pepperoni(bot, message)
+      @pizza.how_to_pizza(bot, message, 'pepperoni')
     when '/hawaiian'
-      @pizza.hawaiian(bot, message)
+      @pizza.how_to_pizza(bot, message, 'hawaiian')
     when '/funfact'
       @pizza.fun_fact(bot, message)
     when '/joke'
