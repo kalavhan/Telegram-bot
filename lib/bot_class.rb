@@ -5,7 +5,7 @@ require 'telegram/bot'
 class Botcore
   def initialize
     @order_boolean = false
-    @pizza = Pizza.new()
+    @pizza = Pizza.new
     token = '813721422:AAGiR4iH_EXqjNuYmjZURVv-wn_Il-Mdn8w'
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen { |message| response(bot, message) }
