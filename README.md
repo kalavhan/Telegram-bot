@@ -62,11 +62,11 @@ This project was built using Ruby as the main language and with the help of gem 
 ## Getting Started
 
     1. Open Bash terminal
-    2. Type **git clone https://github.com/kalavhan/Telegram-bot.git**
-    3. Type **cd Telegram-bot**
-    4. Type **bundle install** (in case of not having telegram-bot-ruby gem installed) 
-    5. Type **bin/main.rb/**
-    6. In telegram search bar type **gpizzabot**
+    2. Type "git clone https://github.com/kalavhan/Telegram-bot.git"
+    3. Type "cd Telegram-bot"
+    4. Type "bundle install" (in case of not having telegram-bot-ruby gem installed) 
+    5. Type "bin/main.rb/"
+    6. In telegram search bar type "gpizzabot"
     7. click "Start"
 
 ## Bot guide
