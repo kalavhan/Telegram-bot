@@ -3,7 +3,10 @@
 <br />
 <p align="center">
  
-  <h3 align="center">Telegram bot</h3>
+  <h1 align="center">Telegram bot with ruby</h1>
+  <p align="center">
+    <img src="images/telegram-bot-ruby.png">
+  </p>
   <p align="center">
     A telegram bot for lovers of pizza
     <br />
