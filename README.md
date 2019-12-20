@@ -75,9 +75,13 @@ This project was built using Ruby as the main language and with the help of gem 
     <img src="images/botsearch.png">
   </p>
 - Be sure that this is the bot you selected
-![Image of bot](images/botinfo.png)
+  <p align="center">
+    <img src="images/botinfo.png">
+  </p>
 - Click "start" to begin to use the bot (Type **/help** in case you need the command list)
-![image of start](images/botstar.png)
+  <p align="center">
+    <img src="images/botstart.png">
+  </p>
 
 ## Commands
     1. /start -- Greeting
