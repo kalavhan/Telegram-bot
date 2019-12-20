@@ -117,11 +117,11 @@ class Pizza
     text_to
   end
 
-  def fun_fact()
+  def fun_fact
     @fun_facts.sample
   end
 
-  def random_joke()
+  def random_joke
     rjoke = @jokes.sample
     "#{rjoke[:question]}\n#{rjoke[:answer]}"
   end
