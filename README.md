@@ -3,9 +3,9 @@
 <br />
 <p align="center">
  
-  <h3 align="center">Tic Tac Toe Application</h3>
+  <h3 align="center">Telegram bot</h3>
   <p align="center">
-    A Ruby collaborative project by Josue Brigido and Ferguson Iyara
+    A telegram bot for lovers of pizza
     <br />
     <a href="https://github.com/kalavhan/Telegram-bot/tree/feature-developer"><strong>Explore the docs »</strong></a>
     <br />
@@ -33,50 +33,64 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-In this project, i built a Telegram bot that gives you instructions to prepare pizza, also tells you a random funfact or joke about pizza
+This telegram bot helps you to prepare a pizza giving you the ingredients and instructions required, it can send you jokes or random facts about pizza! 
 
 ### Objective
 
- -Make a functional telegram bot
+ -Give instructions and ingredients to prepare pizza through a command
+ -Give a randome joke about pizza through a command
+ -Give a random fact about pizza through a comman
+ -Give an error message when a invalid command is given
  
 ### Assignment
 
-Full requeriments for the practice are in [here](https://www.notion.so/microverse/Build-your-own-bot-ebd0d7ac5da240e5987720bdc83f38fa)
+    1. A bot developed in Ruby
+    2. Recommended platforms: ![Slack](https://github.com/slack-ruby/slack-ruby-bot), ![Twitter](https://github.com/muffinista/chatterbot), ![Telegram](https://github.com/atipugin/telegram-bot-ruby)
+    3. The README must include instructions on how to use the bot (how to install it and use it)
+    
 
 ### Built With
 
-This project was built using Ruby. 
+This project was built using Ruby as the main language and with the help of gem ![telegram-bot-ruby](https://github.com/atipugin/telegram-bot-ruby). 
 
 ## Prerequisites
- - Git
- - Ruby
+ - ![Git](https://git-scm.com/downloads)
+ - ![Ruby](https://www.ruby-lang.org/en/downloads/)
+ - ![telegram-bot-ruby gem](https://github.com/atipugin/telegram-bot-ruby)
 
 
 ## Getting Started
 
-- git clone https://github.com/kalavhan/Telegram-bot.git
+    1. Open Bash terminal
+    2. Type **git clone https://github.com/kalavhan/Telegram-bot.git**
+    3. Type **cd Telegram-bot**
+    4. Type **bundle install** (in case of not having telegram-bot-ruby gem installed) 
+    5. Type **bin/main.rb/**
+    6. In telegram search bar type **gpizzabot**
+    7. click "Start"
 
-- cd TicTacToe
-
-- Type **ruby bin/main.rb** in your terminal to start the programm
-
-## Bot info
+## Bot guide
+- Search for **gpizzabot** in telegram search bar and select "Galactic Pizza"
+![Search gpizzabot](images/botsearch.png)
+- Be sure that this is the bot you selected
 ![Image of bot](images/botinfo.png)
-- Search for **@gpizzabot** in telegram and send **/start**
+- Click "start" to begin to use the bot (Type **/help** in case you need the command list)
 
 ## Commands
-1. /start -- Greeting
+    1. /start -- Greeting
 
-2. /help -- Show list of commands
+    2. /help -- Show list of commands
 
-3. /pepperoni -- Show instructions of how to make a pepperoni pizza
+    3. /pepperoni -- Show instructions of how to make a pepperoni pizza
 
-4. /hawaiian -- show instructions of how to make a hawaiian pizza
+    4. /hawaiian -- show instructions of how to make a hawaiian pizza
 
-5. /funfact -- show a random funfact about pizza
+    5. /funfact -- show a random funfact about pizza
 
-6. /joke -- show a random joke about pizza
+    6. /joke -- show a random joke about pizza
 
+## Use
+This Bot is designed with the intention of helping those who love pizza in the instructions needed to prepare a pepperoni or hawaiian pizza, it can be used as a way of entertaiment to read random jokes or fun facts about pizza
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -93,7 +107,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 Josue Brigido - [Github profile](https://github.com/kalavhan)
 
-Project Link: [Project repo](https://github.com/kalavhan/Telegram-bot/TicTacToe/)
+Project Link: [Project repo](https://github.com/kalavhan/Telegram-bot/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
