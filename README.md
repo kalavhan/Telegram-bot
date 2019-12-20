@@ -71,10 +71,13 @@ This project was built using Ruby as the main language and with the help of gem 
 
 ## Bot guide
 - Search for **gpizzabot** in telegram search bar and select "Galactic Pizza"
-![Search gpizzabot](images/botsearch.png)
+  <p align="center">
+    <img src="images/botsearch.png">
+  </p>
 - Be sure that this is the bot you selected
 ![Image of bot](images/botinfo.png)
 - Click "start" to begin to use the bot (Type **/help** in case you need the command list)
+![image of start](images/botstar.png)
 
 ## Commands
     1. /start -- Greeting
