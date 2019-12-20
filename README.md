@@ -44,9 +44,9 @@ This telegram bot helps you to prepare a pizza giving you the ingredients and in
  
 ### Assignment
 
-    1. A bot developed in Ruby
-    2. Recommended platforms: ![Slack](https://github.com/slack-ruby/slack-ruby-bot), ![Twitter](https://github.com/muffinista/chatterbot), ![Telegram](https://github.com/atipugin/telegram-bot-ruby)
-    3. The README must include instructions on how to use the bot (how to install it and use it)
+  1. A bot developed in Ruby
+  2. Recommended platforms: ![Slack](https://github.com/slack-ruby/slack-ruby-bot), ![Twitter](https://github.com/muffinista/chatterbot), ![Telegram](https://github.com/atipugin/telegram-bot-ruby)
+  3. The README must include instructions on how to use the bot (how to install it and use it)
     
 
 ### Built With
