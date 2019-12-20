@@ -37,10 +37,10 @@ This telegram bot helps you to prepare a pizza giving you the ingredients and in
 
 ### Objective
 
- -Give instructions and ingredients to prepare pizza through a command
- -Give a randome joke about pizza through a command
- -Give a random fact about pizza through a comman
- -Give an error message when a invalid command is given
+ - Give instructions and ingredients to prepare pizza through a command
+ - Give a randome joke about pizza through a command
+ - Give a random fact about pizza through a comman
+ - Give an error message when a invalid command is given
  
 ### Assignment
 
