@@ -123,7 +123,6 @@ class Pizza
 
   def random_joke()
     rjoke = @jokes.sample
-    text_to = "#{rjoke[:question]}\n#{rjoke[:answer]}"
-    text_to
+    "#{rjoke[:question]}\n#{rjoke[:answer]}"
   end
 end
